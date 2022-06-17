@@ -1,0 +1,24 @@
+/* Tasks for Thursday Lab(16th June 2022)
+ 1. Write a Java Program to check given number is even or odd */
+
+
+
+package rv;
+import java.util.*;
+
+public class EvenOdd {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		if(n % 2 == 0 ){
+			System.out.println("Even");
+			
+		}
+		else {
+			System.out.println("Odd");
+		}
+
+	}
+
+}
