@@ -1,0 +1,22 @@
+
+package ROHIT;
+
+public class OddNumbersOneToTwoHundred {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		oddNumbers();
+	}
+	
+	public static void oddNumbers() {
+		
+		for(int x = 0 ; x<= 200 ; x++){
+			if(x%2 != 0) {
+				System.out.print(x+",");
+			}
+			
+			
+		}
+	}
+
+}
