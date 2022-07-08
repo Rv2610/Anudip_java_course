@@ -1,0 +1,50 @@
+/*
+ * author: rohit rathod
+ * 
+ * Statements in java activity 4
+ * 
+ * Problem Statement # 2:
+   Develop a program to print the following format 
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2 
+1
+Hint:  Use nested for loops to achieve this.
+ * 
+ */
+
+
+package ROHIT;
+
+public class PrintFormat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		pattern();
+		
+
+	}
+	
+	public static void pattern() {
+		for(int i = 1 ; i < 7 ; i++) {
+			for(int j = 1 ; j <=i ; j++ ) {
+				System.out.print(j+ " ");
+			}
+			System.out.println();
+		}
+		for(int i = 5 ; i > 0 ; i --) {
+			for(int j = 1 ; j <= i ; j++) {
+				System.out.print( j + " ");
+			}
+			System.out.println();
+		}
+	}
+}
