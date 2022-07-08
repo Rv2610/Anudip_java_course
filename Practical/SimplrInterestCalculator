@@ -1,0 +1,60 @@
+/*
+ * author: rohit rathod
+ * 
+ * Statements in java activity 3
+ * 
+ * Develop a calculator for calculating the simple interest for a principle, number of years and rate of interest.
+ * 
+ */
+
+package ROHIT;
+
+import java.util.Scanner;
+
+public class InterestCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter principle amount = ");
+		double principal = sc.nextDouble();
+		System.out.println("enter number of years = ");
+		int years = sc.nextInt();
+		calculateSimpleInterest(principal,years);
+
+	}
+	
+	public static void calculateSimpleInterest(double principal,int years){
+		
+		double interest  = 0;
+		
+		if(principal > 100000) {
+			if(years > 10) {
+				interest = principal * years * 10/100;
+
+			}
+			else {
+				interest = principal * years * 9.5/100;
+				
+			}
+		}
+		else if(principal < 100000) {
+			if(years > 10) {
+				interest = principal * years * 5/100;
+			}
+			else {
+				interest = principal * years * 4.5/100;
+			}
+			
+		}
+		int Res = (int)interest;
+		
+		System.out.println("The interest amount for a principal of = " +principal+" and years = "+years+" is =" + interest);
+		
+		
+		
+		
+		
+	}
+
+}
