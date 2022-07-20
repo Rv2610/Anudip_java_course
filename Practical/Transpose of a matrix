@@ -1,0 +1,28 @@
+package ROHIT;
+
+public class TransposeOfAGivenMAtrix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int m[][] = {{11,23,34},{12,13,14},{16,14,13}};
+		int n[][] = new int[3][3]; 
+		System.out.println("This is the orignal matrix = ");
+		for(int i = 0 ; i<3 ; i++) {
+			for(int j = 0 ; j<3 ; j++) {
+				n[j][i] = m[i][j];
+				System.out.print( m[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("This is the transpose of orignal matrix = ");
+		for(int i = 0 ; i<3 ; i++) {
+			for(int j = 0 ; j<3 ; j++) {
+				
+				System.out.print( n[i][j] + " ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
