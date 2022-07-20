@@ -1,0 +1,64 @@
+package ROHIT;
+
+import java.util.Scanner;
+
+//import java.util.Scanner;
+
+class Studentss {
+	
+	private String name;
+	private int id;
+	private String gender;
+	private int standard;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public int getStandard() {
+		return standard;
+	}
+	public void setStandard(int standard) {
+		this.standard = standard;
+	}
+	
+	
+	
+	
+
+}
+public class Students {
+
+    public static void main(String[] args) {
+        Studentss st = new Studentss();
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Enter Name ?");
+        st.setName(sc.nextLine());
+        System.out.println(" Enter id ?");
+
+        st.setId(sc.nextInt());
+        System.out.println(" Enter standard ?");
+
+        st.setStandard(sc.nextInt());
+        System.out.println(" Enter gender ?");
+
+        st.setGender(sc.next());
+
+        System.out.println("Student name is = " +st.getName()+ " id = "+ st.getId() + " gender = "+st.getGender()+" standard = "+st.getStandard());
+    }
+}
