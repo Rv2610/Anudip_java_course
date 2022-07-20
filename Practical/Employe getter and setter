@@ -1,0 +1,48 @@
+package ROHIT;
+
+class Employe {
+	 private int eid;
+	 private String name;
+	 
+	 public int getId(){
+		 
+		 return eid;
+		 
+	 }
+	 public void setId(int id){
+		 eid = id;
+	 }
+	 public String getName(){
+		 
+		 return name;
+		 
+	 }
+	 public void setName(String n){
+		 name = n;
+	 }
+}
+
+
+
+class CustomClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+				Employe rohit = new Employe();
+				Employe pratik = new Employe();
+				
+				rohit.setId(1);
+				pratik.setId(2);
+				rohit.setName("Rohit");
+				pratik.setName("pratik");
+				
+				System.out.println(rohit.getId());
+				System.out.println(rohit.getName());
+				System.out.println(pratik.getId());
+				System.out.println(pratik.getName());
+				
+				
+			}
+		}
+
