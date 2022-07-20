@@ -1,0 +1,38 @@
+package ROHIT;
+
+abstract class Bill{
+
+int unit;
+public abstract void getUnit();
+
+public void calculateBill(int rate){
+System.out.println(rate*unit);
+}
+}
+
+// we can  use this and super keyword 
+class Home extends Bill{
+int unit = 200; 
+public void getUnit(){
+super.unit = this.unit ;
+}
+}
+
+// or simply we can use the below code
+class Busines extends Bill{
+public void getUnit(){
+unit = 500;
+}
+}
+
+public class EBill {
+	public static void main(String[] args) {
+		Home h = new Home();
+		h.getUnit();
+		h.calculateBill(3);
+		Busines b = new Busines();
+		b.getUnit();
+		b.calculateBill(5);
+		
+	}
+}
